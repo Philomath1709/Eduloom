@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'corsheaders',
 ]
 
+SITE_ID = 1 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -162,5 +164,6 @@ RAZORPAY_KEY_ID = os.getenv('RAZORPAY_KEY_ID')
 RAZORPAY_KEY_SECRET = os.getenv('RAZORPAY_KEY_SECRET')
 
 CORS_ALLOWED_ORIGINS = [
-    "http://127.0.0.1:8000",  # Update this with frontend host
+    "http://localhost:3000",  # React frontend (if used)
+    "http://127.0.0.1:8000",
 ]
